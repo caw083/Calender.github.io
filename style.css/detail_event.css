@@ -1,0 +1,198 @@
+html {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+ 
+.detail {
+    width: 50vb;
+    position: fixed;
+    border-radius: 15px;
+    background-color: #F5EBEB;
+    padding: 10px;
+    font-size: 14px;
+    box-shadow:0 24px 35px 3px rgba(0, 0, 0, 0.252), 0 9px 60px 8px rgba(0, 0, 0, 0.455), 0 11px 15px -7px rgba(0, 0, 0, 0.438);
+    color: #524444;
+    right: 470px;
+    animation: page-transition 0.5s ease-in-out;
+}
+
+#goodfriday-detail .detail {
+    top: 110px;
+}
+
+#aprilfoolsday-detail .detail {
+    top: 210px;
+}
+
+#easter-detail .detail {
+    top: 95px;
+}
+
+#test-detail .detail {
+    top: 110px;
+}
+
+#holiday-detail .detail {
+    top: 110px;
+}
+
+@keyframes page-transition {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+#exit-detail {
+    color: #524444;
+    font-size: 35px;
+    width: 100%;
+    border-bottom: 2px solid #524444;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.detail ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.detail li {
+    width: 60px;
+}
+
+#edit-detail:hover, #exit-detail:hover, #delete-detail:hover, #done-detail:hover {
+    background-color: #e4d5d5;
+    border-radius: 5px;
+}
+
+.detail img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.detail ul~ul {
+    justify-content: space-between;
+    padding-top: 5px;
+    border-top: 2px solid #524444;
+    margin: 0;
+}
+
+#important {
+    display: flex;
+    align-items: center;
+    width: auto;
+    font-size: 15px;
+    border-radius: 5px;
+    padding-right: 12px;
+}
+
+#label-important {
+    font-size: 21px;
+    margin-left: 12px;
+    margin-right: 5px;
+    color: #ef1c1c;
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 700,
+    'GRAD' 0,
+    'opsz' 20
+}
+
+#label-usual {
+    font-size: 21px;
+    margin-left: 12px;
+    margin-right: 5px;
+    color: #94d893;
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 700,
+    'GRAD' 0,
+    'opsz' 20
+}
+
+#icon-date, #icon-durasi, #icon-lokasi {
+    margin-right: 5px;
+}
+
+#favorite-goodfriday, #flag-goodfriday, #flag-test, #flag-easter, #flag-holiday, #favorite-easter, #favorite-holiday{
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+#favorite-goodfriday, #favorite-easter, #favorite-holiday {
+    color: rgb(255, 211, 0);
+}
+
+#flag-goodfriday, #flag-easter {
+    color: #FF8B00;
+}
+
+#flag-test {
+    color: #D21312;
+}
+
+#flag-holiday {
+    color: rgb(248, 154, 170);
+}
+
+#category-world {
+    color: orange;
+}
+
+#category-national {
+    color: #ff7272;
+}
+
+#category-kuliah {
+    color: rgb(107, 184, 184);
+}
+
+#category-vacation {
+    color: rgb(41, 109, 235);
+}
+
+#event-done {
+    color: #2de22a;
+}
+
+.detail #judul-detail {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 7px 0;
+    text-align: center;
+    background-color: #ecdada;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+#tanggal-mulai, #tanggal-selesai, #location, #duration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    justify-content: start;
+    font-size: 15px;
+}
+
+#location {
+    margin-bottom: 15px;
+}
+
+#pemisah-jam {
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 0,
+    'GRAD' 0,
+    'opsz' 10
+}

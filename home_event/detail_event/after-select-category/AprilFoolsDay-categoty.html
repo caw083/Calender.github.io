@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Kalender</title>
+	<link rel="stylesheet" type="text/css" href="../../../style.css/styleMain.css">
+	<link rel="stylesheet" type="text/css" href="../../../style.css/detail_event.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="kiri">
+				<a href="../../../index.html" id="home"><span class="material-symbols-outlined">house</span></a>
+				<div class="logo">
+					<div class="ring1"></div>
+					<div class="ring2"></div>
+					<div class="ring3"></div>
+				</div>
+				<div class="calender-header">Calendar</div>
+			</div>
+			<div class="namaBulan">
+				<h1>
+					<a href="#"><span class="material-symbols-outlined" id="arrorLeftMonth">arrow_left</span></a>
+					April 2023
+					<a href="#"><span class="material-symbols-outlined"id="arrorRightMonth">arrow_right</span></a>
+				</h1>
+			</div>
+
+			<div class="Right">
+				<div class="Time">
+					<select name="time" id="timezone">
+						 <optgroup label="Western Time">
+    						<option value="WET">Western Europian Time</option>
+    						<option value="USA">United States Time</option>
+  						</optgroup>
+  						<optgroup label="Eastern Time">
+    						<option value="Pacific">Pacific Time</option>
+    						<option value="Central Asia">Central Asia Time</option>
+  						</optgroup>
+					</select>
+				</div>
+				<div class="search">
+					<span id="searchIcon" class="material-symbols-outlined">search</span>
+					<input type="text" name="searchField" placeholder="Search ..." id="searchField">
+				</div>
+				<span class="material-symbols-outlined" id="profile">account_circle</span>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<div class="sidebar">
+			<div class="atas">
+				<div id="dropdown-category">
+					<h4><span class="material-symbols-outlined">category</span>Category</h4>
+					<span class="material-symbols-outlined">expand_more</span>
+				</div>
+				<ul id="category">
+					<li><a href="../../category/national.html"><div id="national" ></div><div>National Day</div></a></li>
+					<li><a href="../../category/kuliah.html"><div id ="kuliah"></div><div>Kuliah</div></a></li>
+					<li><a href="../../category/organisasi.html"><div id ="organisasi"></div><div>Organisasi</div></a></li>
+					<li class="activeEvent"><a href="../../../index.html"><div id ="world"></div><div>World Event</div></a></li>
+					<li><a href="../../category/birthday.html"><div id="birthday" ></div><div>Birthday</div></a></li>
+					<li><a href="../../category/vacation.html"><div id="vacation" ></div><div>Vacation</div></a></li>
+				</ul>
+			</div>
+			<div class="bawah">
+				<div id="add-event">
+					<a href="#"><span class="material-symbols-outlined">add</span>Add Event</a>
+				</div>
+			</div>
+		</div>
+		<div class="Calender">
+			<div class="april">
+				<center>
+					<table border="1">
+						<thead>
+							<th>Sunday</th>
+							<th>Monday</th>
+							<th>Tuesday</th>
+							<th>Wednesday</th>
+							<th>Thursday</th>
+							<th>Friday</th>
+							<th>Saturday</th>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="weekend"></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td  class="weekend">1 <p id="aprilfoolday"><a href="../../category/world.html">April Fools Day</a></p></td>
+							</tr>
+							<tr>
+								<td  class="weekend">2</td>
+								<td>3</td>
+								<td>4</td>
+								<td>5</td>
+								<td>6</td>
+								<td>7</td>
+								<td  class="weekend">8</td>
+							</tr>
+							<tr>
+								<td  class="weekend">9</td>
+								<td>10</td>
+								<td>11</td>
+								<td>12</td>
+								<td>13</td>
+								<td>14</td>
+								<td  class="weekend">15</td>
+							</tr>
+							<tr>
+								<td  class="weekend">16</td>
+								<td>17</td>
+								<td>18</td>
+								<td>19</td>
+								<td>20</td>
+								<td>21</td>
+								<td  class="weekend">22</td>
+							</tr>
+							<tr>
+								<td  class="weekend">23</td>
+								<td>24</td>
+								<td>25</td>
+								<td>26</td>
+								<td>27</td>
+								<td>28</td>
+								<td  class="weekend">29</td>
+							</tr>
+							<tr>
+								<td  class="weekend">30</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td class="weekend"></td>
+							</tr>
+						</tbody>
+					</table>
+                    <div id="aprilfoolsday-detail">
+                        <div class="detail">
+                            <a href="../../../home_event/category/world.html"><span class="material-symbols-outlined" id="exit-detail">cancel</span></a>
+                            <ul>
+                                <li id="edit-detail"><span class="material-symbols-outlined">edit</span><br>Edit</li>
+                                <li><span class="material-symbols-outlined" id="favorite-aprilfoolsday">star</span><br>Favorite</li>
+                                <li><span class="material-symbols-outlined" id="flag-aprilfoolsday">flag</span><br>Flag</li>
+                                <li><span class="material-symbols-outlined" id="category-world">language</span><br>Category</li>
+                                <li id="done-detail"><span class="material-symbols-outlined" id="event-done">check_box</span><br>Done</li>
+                            </ul>
+                            <p id="judul-detail">April Fools Day</p>
+                            <p id="tanggal-mulai">
+                                <span class="material-symbols-outlined" id="icon-date">calendar_month</span>
+                                Start&emsp;&emsp;: April 1, 2023
+                                <span class="material-symbols-outlined" id="pemisah-jam">fiber_manual_record</span>
+                                00:00 AM
+                            </p>
+                            <p id="tanggal-selesai">
+                                <span class="material-symbols-outlined" id="icon-date">calendar_month</span>
+                                End&emsp;&emsp;&ensp;: April 1, 2023
+                                <span class="material-symbols-outlined" id="pemisah-jam">fiber_manual_record</span>
+                                11:59 PM
+                            </p>
+                            <p id="duration"><span class="material-symbols-outlined" id="icon-durasi">timer</span>Duration&nbsp;: 1 Day</p>
+                            <p id="location"><span class="material-symbols-outlined" id="icon-lokasi">location_on</span>Location&nbsp;: Bandung</p>
+                            <ul>
+                                <li id="important"><span class="material-symbols-outlined" id="label-usual">label</span>Level&ensp;&emsp;&nbsp;: Usual</li>
+                                <li id="delete-detail"><span class="material-symbols-outlined">delete</span><br>Delete</li>
+                            </ul>
+                        </div>
+                    </div>
+				</center>
+			</div>
+			<footer>
+				<span>&copy; Christo, Melisa, Wulan - 2023</span>
+			</footer>
+		</div>
+	</main>
+</body>
+</html>
